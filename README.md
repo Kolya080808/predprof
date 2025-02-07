@@ -24,5 +24,5 @@
 | Провод соединительный папа-мама "Dupont", 20 см, 40 шт | 1 | 286 руб. | https://www.ozon.ru/product/provod-soedinitelnyy-papa-mama-dupont-20-sm-40-sht-832392576/?avtc=1&avte=4&avts=1738949952 |
 | Модуль датчик температуры (цифровой термометр) DS18B20 в корпусе TO-92 Arduino & Комплектующие для платформы Ардуино | 1 | 184 руб. | https://www.ozon.ru/product/modul-datchik-temperatury-tsifrovoy-termometr-ds18b20-v-korpuse-to-92-arduino-komplektuyushchie-dlya-522731862/?avtc=1&avte=4&avts=1738949952 |
 | | | ИТОГО | |
-| :-: | :-: | :-: | :-: |
+| | | | |
 | | | 4598 руб. | |
