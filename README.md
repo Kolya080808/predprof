@@ -12,7 +12,7 @@
 ## Финансовая смета
 
 | Наименование расхода | Количество | Расходы (за штуку) | Ссылка |
-| :----------------: | :------: | :----: | :--: |
+| :----------------: | :------: | :----: | -- |
 | Трехосный компас-магнитометр GY-273 на микросхеме HA5883 для Arduino        |  1  | 1082 руб. | https://www.ozon.ru/product/trehosnyy-kompas-magnitometr-gy-273-na-mikrosheme-ha5883-dlya-arduino-1332794442/?asb=1wuxgJ9Xja7sG%252B7Oi%252FAwKsKvsYTOkbyrNu5EmjSFE9I%253D&asb2=LYTk1LnXhv6UjxjMzFZnMHsOqVgnrzxalFLEdnqV8mTc6WM0eBRS3JTy0XPKf7UAlHbvUbsaNXnt54Ygf7EXXQ&avtc=1&avte=4&avts=1736945743&keywords=HMC5883L |
 | LCD дисплей 1602 зеленый, с I2C модулем, для Arduino, NodeMCU, STM32           |  1  | 268 руб. | https://www.ozon.ru/product/lcd-displey-1602-zelenyy-s-i2c-modulem-dlya-arduino-nodemcu-stm32-1538752524/?abt_att=1&from=share_android&origin_referer=github.com&utm_campaign=productpage_link&utm_medium=share_button&utm_source=smm |
 | NRF24L01 Transceiver, Радиочастотный трансивер 2.4ГГц, дальность связи до 100м    |  1  | 228 руб. | https://www.ozon.ru/product/nrf24l01-transceiver-radiochastotnyy-transiver-2-4ggts-dalnost-svyazi-do-100m-1043208008/ |
