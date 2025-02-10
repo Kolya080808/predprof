@@ -1,5 +1,5 @@
-#include <StandardCplusplus.h> // Для работы библиотек iostream, vector, string, sstream
-#include <SPI.h>  
+#include <StandardCplusplus.h> 
+#include <SPI.h> 
 #include "nRF24L01.h" 
 #include "RF24.h" 
 #include <Wire.h> 
@@ -56,6 +56,8 @@ void setup() {
  radio.powerUp(); 
  radio.startListening(); 
  Serial.println("Радио готово к приему сообщений...");
+ servo.attach(2);
+ servo.write(0);
  lcd.init();
  lcd.backlight();
  timer=millis();
@@ -68,17 +70,7 @@ void loop() {
   byte read;
   int print= 1;
   lcd.clear();
-  lcd.setCursor(0,0);
-  if(timer2-wait2>=10000){
-    float temp = analogRead(A0);
-    lcd.print("temp ");
-    lcd.print(temp);
-    lcd.print("C");
-    timer2 = millis();
-    wait2 = millis();
-    lcd.clear();
-    lcd.setCursor(0,0);
-  }
+  lcd.setCursor(0,0); 
   // radio.read(&read,1);
   // if (read = 1){
   //   radio.openWritingPipe( address[0]);
@@ -100,29 +92,53 @@ void loop() {
     while (ss >> num) { 
     encryptedForDecryption.push_back(num);  decryptionMessage(encryptedForDecryption, a, b); 
     }
-    if((timer-wait)<=1999 and decryptionMessage(encryptedForDecryption, a, b) != messange2) {
-       messange1 = decryptionMessage(encryptedForDecryption, a, b); 
+    if((timer-wait)<=1000 and decryptionMessage(encryptedForDecryption, a, b) != messange2) {
+       messange1 = decryptionMessage(encryptedForDecryption, a, b);// Управляем сервоприводом
+
     }
-    if ((timer-wait)>=1015 and decryptionMessage(encryptedForDecryption, a, b) !=messange1) {
+    if ((timer-wait)>=1000 and decryptionMessage(encryptedForDecryption, a, b) !=messange1) {
       messange2 = decryptionMessage(encryptedForDecryption, a, b);
+      char seekangel = '*';
+      if (messange2.indexOf(seekangel) != -1) { // Проверяем, что символ найден
+        String sangel = messange2.substring(0,messange2.indexOf(seekangel));
+        int angel = sangel.toInt(); // Преобразуем в число
+        servo.write(angel);
+        Serial.println(angel);
+      } 
       timer = millis();
       wait = millis();
-        fullmessange =  messange1 + messange2;
-        Serial.println("messange:" + fullmessange);
-        messange1="";
-        messange2="";
+      fullmessange =  messange1 + messange2;
+      messange1="";
+      messange2="";
       }
-    }
-  else{
-    lcd.clear();
-    lcd.setCursor(0,0)
     lcd.print(fullmessange);
-  } 
-  // первое сообщение
+    memset(messange,0,sizeof(messange));
+    delay(1000);
+    wait = (wait-1000);
+    wait2 = (wait2-1000);
+  }
+  else{
+    float temp = analogRead(A0);
+    lcd.print("temp ");
+    lcd.print(temp);
+    lcd.print("C");
+    delay(1000);
+  }
+  
 
-  // lcd.print(newmassage);
-  memset(messange,0,sizeof(messange));
-  delay(1000);
-  wait = (wait-1000);
-  wait2 = (wait2-1000);
+  if((timer2-wait2)>=10000){
+    lcd.clear();
+    float temp = analogRead(A0);
+    lcd.print("temp ");
+    lcd.print(temp);
+    lcd.print("C");
+    delay(8000);
+    lcd.clear();
+    lcd.setCursor(0,0);
+    timer = millis();
+    wait = millis();
+    timer2 = millis();
+    wait2 = millis();
+    
+  }
 }
