@@ -41,20 +41,25 @@
 | | | 4598 руб. | |
 
 
+# Ссылки на скачивание файлов (нужно будет подождать после нажатия на ссылку 5-10 секунд), демонстрации.
+
 
 ## 3Д МОДЕЛИ
 
-[Ссылка на скачивание]()
-
+[Ссылка на скачивание](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2FKolya080808%2Fpredprof%2Ftree%2Fmain%2F3d_model)
 
 ## Код
 
-[Ссылка на скачивание]()
+[Ссылка на скачивание](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2FKolya080808%2Fpredprof%2Ftree%2Fmain%2Fcode)
 
 ## Чертежи
 
-[Ссылка на скачивание]()
+[Ссылка на скачивание](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2FKolya080808%2Fpredprof%2Ftree%2Fmain%2Fimages)
 
 ## Схемы
 
-[Ссылка на скачивание]()
+[Ссылка на скачивание](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2FKolya080808%2Fpredprof%2Ftree%2Fmain%2Fschemes)
+
+## Ссылка на видео демонстрации
+
+[Rutube](
