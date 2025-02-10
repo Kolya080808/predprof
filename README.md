@@ -62,4 +62,6 @@
 
 ## Ссылка на видео демонстрации
 
-[Rutube](
+[Видео 1](https://rutube.ru/video/4a0eeac473d98cd3b17d16f6c6f41e33/), [Видео 2](https://rutube.ru/video/2dea4a91a3a1e4dbda1cc624d5fb746f/)
+
+## Отчет .docx ([ссылка](https://github.com/Kolya080808/predprof/blob/main/Converted.docx))
